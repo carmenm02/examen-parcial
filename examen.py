@@ -11,8 +11,12 @@ def minion_game(string):
             kevin = kevin + (len(palabra)-i)
     
     if stuart > kevin:
-        print("¡Stuart es el ganador con una puntuación de: " + stuart)
+        print("¡Stuart es el ganador con una puntuación de: ", stuart)
     elif kevin > stuart:
-        print("Kevin es el ganador con una puntuación de: " + kevin)
+        print("Kevin es el ganador con una puntuación de: ", kevin)
     else:
         print("Kevin y Stuart tienen la misma puntuación")
+
+if __name__ == '__main__':
+    string = input("La palabra elegida es: ")
+    minion_game(string)
