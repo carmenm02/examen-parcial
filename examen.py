@@ -9,3 +9,10 @@ def minion_game(string):
             stuart = stuart + (len(palabra)-i)
         else:
             kevin = kevin + (len(palabra)-i)
+    
+    if stuart > kevin:
+        print("¡Stuart es el ganador con una puntuación de: " + stuart)
+    elif kevin > stuart:
+        print("Kevin es el ganador con una puntuación de: " + kevin)
+    else:
+        print("Kevin y Stuart tienen la misma puntuación")
