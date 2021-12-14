@@ -26,3 +26,12 @@ def movimientos(filas, columnas):
     elif filas == 2:
         tablero[filas-1][columnas] = tablero[filas][columnas]
         tablero[filas][columnas] = ' '
+
+#Voy a crear un while para completar el tablero
+while True:
+    tablero = [
+        [' ', ' ', ' '], 
+        [' ', ' ', ' '],
+        [' ', ' ', ' '],
+    ]
+#Nose como continuar y no me queda tiempo :(
