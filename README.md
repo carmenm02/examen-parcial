@@ -1,4 +1,4 @@
-Este es el enlace de mi repositorio: 
+Este es el enlace de mi repositorio: https://github.com/carmenm02/examen-parcial.git
 
 # examen-parcial
 #ejercicio 1
@@ -24,3 +24,42 @@ def minion_game(string):
 if __name__ == '__main__':
     string = input("La palabra elegida es: ")
     minion_game(string)
+    
+#ejercicio 2
+from random import randint
+
+player1 = 0
+player2 = 0
+tablero = 0
+
+def funcion(filas, columnas):
+    if filas == 0 and tablero[filas + 1][columnas] != " ":
+        print("FALLO")
+    elif filas == 1 and tablero[filas + 1][columnas] != " ":
+        print("FALLO")
+    else:
+        print("No hay fallos")
+
+def movimientos(filas, columnas):
+    if filas == 0:
+        tablero[filas+1][columnas] = tablero[filas][columnas]
+        tablero[filas][columnas] = ' '
+    elif filas == 1:
+        if tablero[filas+1][columnas] != ' ':
+            tablero[filas-1][columnas] = tablero[filas][columnas]
+            tablero[filas][columnas] = ' '
+        else:
+            tablero[filas+1][columnas] = tablero[filas][columnas]
+            tablero[filas][columnas] = ' '
+    elif filas == 2:
+        tablero[filas-1][columnas] = tablero[filas][columnas]
+        tablero[filas][columnas] = ' '
+
+#Voy a crear un while para completar el tablero
+while True:
+    tablero = [
+        [' ', ' ', ' '], 
+        [' ', ' ', ' '],
+        [' ', ' ', ' '],
+    ]
+#Nose como continuar y no me queda tiempo :(
